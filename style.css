@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+h3 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', sans-serif; 
+    font-size: 3rem;
+}
+
+
+
+body {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsl(0, 0%, 95%);
+}
+
+main {
+    display: flex;
+
+    width: 55rem;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+    
+    flex: 1;
+
+    padding: 2rem;
+}
+
+
+article:nth-child(1) {
+    background-color: hsl(31, 77%, 52%);
+
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+article:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+article:nth-child(3) {
+    background-color:  hsl(179, 100%, 13%);
+    
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+
+
+article img {
+    width: 4rem;
+}
+
+article button {
+    width: 70%;
+
+    box-sizing: border-box;
+
+    padding: 1rem;
+
+    border: 2px solid hsl(0, 0%, 100%, 0%);
+    border-radius: 2rem;
+    outline: none;
+
+    background-color: hsl(0, 0%, 95%);
+}
+
+
+article:nth-child(1) button {
+    color: hsl(31, 77%, 52%);
+}
+article:nth-child(2) button {
+    color: hsl(184, 100%, 22%);
+}
+article:nth-child(3) button {
+    color:  hsl(179, 100%, 13%);
+}
+
+
+article button:active {
+    border: 2px solid hsl(0, 0%, 95%);
+
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 100%, 0%);
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+}
