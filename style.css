@@ -27,13 +27,15 @@ body {
     justify-content: center;
     align-items: center;
 
+    padding: 1rem;
+
     background-color: hsl(0, 0%, 95%);
 }
 
 main {
     display: flex;
 
-    width: 55rem;
+    width: clamp(60%, 55rem, 95%);
 }
 
 article {
@@ -111,4 +113,27 @@ footer {
     width: 100%;
     text-align: center;
     font-size: 10px;
+}
+
+
+
+@media (max-width: 1440px) {
+    
+    body {
+        align-items: normal;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    article:nth-child(1) {
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 0;
+    }
+    article:nth-child(3) {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1rem;
+    }
+
 }
